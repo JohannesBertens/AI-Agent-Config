@@ -28,7 +28,9 @@ Cons:
 - Hard(er) to configure with alternative LLMs
 - Keeps forgetting/losing my configuration
 
-### Codex
+### Codex & Coder
+**Codex**
+Github: https://github.com/openai/codex
 Pros:
 - Fast
 - Feels limited in usage
@@ -36,7 +38,7 @@ Cons:
 - Runs through the "limits" quickly
 - NEEDS "--search" when using or it will not search online
 
-### Coder
+**Code(r)**
 Github: https://github.com/just-every/code
 
 Pros:
@@ -47,6 +49,21 @@ Pros:
 Cons:
 - A lot of options to configure
 - Does not work well with other LLMs via OpenRouter
+
+How to configure a different provider:
+Open `~/.codex/config.toml` and change the model & provider as such
+```
+model= "openai/gpt-5"
+model_provider = "openrouter"
+preferred_auth_method = "apikey"
+model_reasoning_effort = "medium"
+
+[model_providers.openrouter]
+name = "openrouter"
+base_url = "https://openrouter.ai/api/v1"
+env_key= "OPENROUTER_API_KEY"
+```
+Then run `export OPENROUTER_API_KEY=<your key here>` after which you can start `codex`, `code` or `coder` depending on your preference and installation.
 
 ### Gemini
 Pros:
