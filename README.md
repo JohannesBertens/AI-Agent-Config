@@ -65,6 +65,36 @@ env_key= "OPENROUTER_API_KEY"
 ```
 Then run `export OPENROUTER_API_KEY=<your key here>` after which you can start `codex`, `code` or `coder` depending on your preference and installation.
 
+MCP servers are also configured _differently_ here.
+```
+[mcp_servers.context7]
+args = ["-y", "@upstash/context7-mcp", "--api-key", "<API KEY HERE>"]
+command = "npx"
+
+[mcp_servers.playwright]
+command = "npx"
+args = ["@playwright/mcp@latest"]
+
+[mcp_servers.nextjs_docs]
+command = "npx"
+args = ["mcp-remote","https://gitmcp.io/vercel/next.js" ]
+
+[mcp_servers.tailwindcss_docs]
+command = "npx"
+args = ["mcp-remote","https://gitmcp.io/tailwindlabs/tailwindcss" ]
+
+[mcp_servers.fastapi_docs]
+command = "npx"
+args = ["mcp-remote","https://gitmcp.io/fastapi/fastapi" ]
+
+[mcp_servers.pydantic_ai_docs]
+command = "npx"
+args = ["mcp-remote","https://gitmcp.io/pydantic/pydantic-ai" ]
+
+[mcp_servers.postgres_docs]
+command = "npx"
+args = ["mcp-remote","https://gitmcp.io/postgres/postgres" ]
+```
 ### Gemini
 Pros:
 - Can use the "gemini-2.5-flash" model pretty much all day
