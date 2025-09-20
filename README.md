@@ -23,6 +23,7 @@ Pros:
 - Very decent code quality
 - Very populair, so a lot of information to be found online
 - Great at searching online for information
+
 Cons:
 - Runs through the "limits" quickly
 - Hard(er) to configure with alternative LLMs
@@ -34,8 +35,9 @@ Github: https://github.com/openai/codex
 Pros:
 - Fast
 - Feels limited in usage
+
 Cons:
-- Runs through the "limits" quickly
+- Runs through the "limits" in my plan quickly, and only resets after **days**
 - NEEDS "--search" when using or it will not search online
 
 **Code(r)**
@@ -46,6 +48,7 @@ Pros:
 - Seems to work well with GTP-5
 - Uses tokens quickly
 - A lot of options to configure
+
 Cons:
 - A lot of options to configure
 - Does not work well with other LLMs via OpenRouter
@@ -99,6 +102,7 @@ args = ["mcp-remote","https://gitmcp.io/postgres/postgres" ]
 Pros:
 - Can use the "gemini-2.5-flash" model pretty much all day
 - Can search online great
+
 Cons:
 - In the free tier, the "gemini-2.5-pro" model (default) runs out of tokens very quickly
 - A bit slow
@@ -108,6 +112,7 @@ Cons:
 Github: https://github.com/QwenLM/qwen-code
 Pros:
 - Runs the Qwen3 Coder model once logged in forever
+
 Cons:
 - A bit slow
 - Not much to configure
@@ -117,6 +122,7 @@ Cons:
 Pros:
 - A lot to configure
 - Has a decent Todolist, like Claude Code
+
 Cons:
 - Slow
 - Only available in the IDE, no CLI
